@@ -30,7 +30,7 @@ endpoints:
     responses:
       -
         status: 401
-        content: '{"message":"Unauthenticated."}'
+        content: '{"success":false,"message":"Unauthenticated","error":"Please login to access this route","status_code":401}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -70,7 +70,7 @@ endpoints:
     responses:
       -
         status: 401
-        content: '{"message":"Unauthenticated."}'
+        content: '{"success":false,"message":"Unauthenticated","error":"Please login to access this route","status_code":401}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -119,7 +119,7 @@ endpoints:
         name: date
         description: 'Must be a valid date.'
         required: true
-        example: '2025-08-23T10:33:39'
+        example: '2025-08-24T18:45:31'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -137,7 +137,7 @@ endpoints:
         custom: []
     cleanBodyParameters:
       title: consequatur
-      date: '2025-08-23T10:33:39'
+      date: '2025-08-24T18:45:31'
       status: consequatur
     fileParameters: []
     responses: []
@@ -157,7 +157,7 @@ endpoints:
       subgroup: ''
       subgroupDescription: ''
       title: 'Display the specified resource.'
-      description: ''
+      description: 'Using Route Model Binding - Laravel will automatically inject the model'
       authenticated: false
       deprecated: false
       custom: []
@@ -169,14 +169,14 @@ endpoints:
         name: id
         description: 'The ID of the booking.'
         required: true
-        example: consequatur
-        type: string
+        example: 2
+        type: integer
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanUrlParameters:
-      id: consequatur
+      id: 2
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -185,7 +185,7 @@ endpoints:
     responses:
       -
         status: 401
-        content: '{"message":"Unauthenticated."}'
+        content: '{"success":false,"message":"Unauthenticated","error":"Please login to access this route","status_code":401}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -221,14 +221,14 @@ endpoints:
         name: id
         description: 'The ID of the booking.'
         required: true
-        example: consequatur
-        type: string
+        example: 2
+        type: integer
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanUrlParameters:
-      id: consequatur
+      id: 2
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -246,7 +246,7 @@ endpoints:
         name: date
         description: 'Must be a valid date.'
         required: true
-        example: '2025-08-23T10:33:39'
+        example: '2025-08-24T18:45:31'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -264,7 +264,7 @@ endpoints:
         custom: []
     cleanBodyParameters:
       title: consequatur
-      date: '2025-08-23T10:33:39'
+      date: '2025-08-24T18:45:31'
       status: consequatur
     fileParameters: []
     responses: []
@@ -296,14 +296,14 @@ endpoints:
         name: id
         description: 'The ID of the booking.'
         required: true
-        example: consequatur
-        type: string
+        example: 2
+        type: integer
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanUrlParameters:
-      id: consequatur
+      id: 2
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
